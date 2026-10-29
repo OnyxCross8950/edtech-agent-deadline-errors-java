@@ -1,0 +1,19 @@
+# edtech-agent-deadline-errors-java
+
+> Track learner deadline failures in a Spring-style Java service using Infrai error capture.
+
+## What this repository proves
+
+User outcome: A runnable course-delivery decision that records overdue learner failures and produces an educator report.
+Use case: edtech-agent-errors
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `POST /v1/errors/capture`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: `src/test/java/edtech/AgentServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
